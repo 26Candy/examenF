@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to poetry and heart</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="about.html">POEMAS</a></li>
+            <li><a href="contact.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+ 
+        <button id="cambiarColor">Personaliza tu color</button>
+        <button id="botonAtras">Atrás</button>
+        <button id="botonAdelante">Adelante</button>
+        <script>
+            const botonAtras = document.getElementById("botonAtras");
+            const botonAdelante = document.getElementById("botonAdelante");
+    
+            // Función para retroceder una página
+            botonAtras.addEventListener("click", function() {
+                window.history.back();
+            });
+    
+            // Función para avanzar una página
+            botonAdelante.addEventListener("click", function() {
+                window.history.forward();
+            });
+        </script>
+    
+    <script src="script.js"></script>
+
+</script>
+</body>
+</html>
+
+<body>
+    <img src="https://cdn-icons-png.flaticon.com/512/2446/2446554.png" alt="Imagen de la web" width="500" height="600">
+</body>
+
+
+
+

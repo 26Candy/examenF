@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escribir y Leer Poemas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <button id="botonAtras">Atrás</button>
+            <button id="botonAdelante">Adelante</button>
+            <script>
+                const botonAtras = document.getElementById("botonAtras");
+                const botonAdelante = document.getElementById("botonAdelante");
+        
+                // Función para retroceder una página
+                botonAtras.addEventListener("click", function() {
+                    window.history.back();
+                });
+        
+                // Función para avanzar una página
+                botonAdelante.addEventListener("click", function() {
+                    window.history.forward();
+                });
+            </script>
+            <script>
+                function fecha()
+                {
+                var obj_fecha=new Date();
+                var completo=obj_fecha.toGMTString();
+                var hora=obj_fecha.getHours();
+                var minuto=obj_fecha.getMinutes();
+                var segundo=obj_fecha.getSeconds();
+                var dia=obj_fecha.getDate();
+                var mes=obj_fecha.getMonth()+1;
+                var anis=obj_fecha.getYear();
+                alert(hora +":" +minuto +":" +segundo);
+                alert(dia +"/" +mes +"/" +anis);
+                alert(completo);
+                }
+                </script>
+<body onLoad=fecha();>
+</body>
+
+        <h1>Escribe y Lee Poemas</h1>
+
+        <img src="https://cdn-icons-png.flaticon.com/512/5418/5418007.png" alt="Imagen de la web" width="200" height="300">
+  
+    </header>
+    <main>
+        <section id="escribir-poema">
+            <h2>Escribe tu Poema</h2>
+            <form id="formulario-poema">
+                <label for="titulo">Título del Poema:</label>
+                <input type="text" id="titulo" name="titulo" required>
+
+                <label for="autor">Autor:</label>
+                <input type="text" id="autor" name="autor" required><br>
+
+                <br><textarea id="contenido" name="contenido" rows="8" required></textarea>
+
+                <button type="submit">Guardar Poema</button>
+            </form>
+        </section>
+
+        <section id="poemas guardados">
+            <h2>Poemas Guardados</h2>
+            <ul id="lista-poemas">
+                <!-- Los poemas guardados se mostrarán aquí -->
+            </ul>
+
+            
+            
+            
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+
+    <script>
+        var v1;
+        
+        function abre() {
+          v1 = window.open("ab.htm", "v", "status=yes,resizable=yes");
+          v1.document.body.innerHTML = "Ventana creada para publicidad";
+          window.status = "Ventana Estándar del Navegador";
+        }
+        
+        function opera(opcion) {
+          switch (opcion) {
+            
+            case 2:
+              window.print(); // Agregado el método de impresión
+              cargapagina();
+              break;
+            }
+
+        }
+    </script>
+<body onload="abre();">
+   
+    <input type="button" value="Imprime" onClick="opera(2);">
+     <br>
+
+</body>
+</html>

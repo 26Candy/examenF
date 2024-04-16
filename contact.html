@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <button id="botonAtras">Atrás</button>
+            <button id="botonAdelante">Adelante</button>
+            <script>
+                const botonAtras = document.getElementById("botonAtras");
+                const botonAdelante = document.getElementById("botonAdelante");
+        
+                // Función para retroceder una página
+                botonAtras.addEventListener("click", function() {
+                    window.history.back();
+                });
+        
+                // Función para avanzar una página
+                botonAdelante.addEventListener("click", function() {
+                    window.history.forward();
+                });
+            </script>
+
+        <h1>Contacto</h1>
+
+      
+
+    </header>
+    <nav>
+        <ul>
+            
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="about.html">Acerca de</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Información de Contacto</h2>
+        <p>Registrate con tus datos personales</p> <script>
+            setTimeout(reloj, 100);
+            
+
+            function reloj() {
+              var tiempo = new Date();
+              var hora = tiempo.getHours();
+              var minuto = tiempo.getMinutes();
+              var segundo = tiempo.getSeconds();
+            
+              var textohora = hora + ":" + minuto + ":" + segundo;
+              document.getElementById("caja").value = textohora;
+              
+              setTimeout(reloj, 1000); // Actualizar cada 1 segundo (1000 milisegundos)
+            }
+            </script>
+
+<body>
+    <input type="text" id="caja" size="10">
+    </body>
+       
+        <img src="https://cdn-icons-png.flaticon.com/512/5418/5418007.png" alt="Imagen de la web" width="200" height="300">
+        
+
+
+        <h2>Registro</h2>
+        <form id="registroForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required><br>
+
+            <br><label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+
+            <button type="submit">Registrarse</button>
+        </form><br>
+
+<script>
+function informa()
+{
+var v1;
+var nombre;
+var cpu;
+var sistema;
+v1=window.open("","v","width=300 height=150");
+v1.document.bgColor="gray";
+
+
+nombre=navigator.appName;
+cpu=navigator.cpuClass;
+sistema=navigator.platform;
+v1.document.writeln("Navegador: " +nombre);
+v1.document.writeln("Sistema: " +sistema);
+v1.document.write("Micro: " +cpu);
+}
+</script>
+<input type="button" value="Info." onClick=informa();>
+
+
+               
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
